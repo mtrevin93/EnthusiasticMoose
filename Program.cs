@@ -78,8 +78,7 @@ bool MooseAsks(string question)
 
 void CanadaQuestion()
 {
-    bool isTrue = MooseAsks("Is Canada real?");
-    if (isTrue)
+    if (MooseAsks("Is Canada real?"))
     {
         MooseSays("Really? It seems very unlikely.");
     }
@@ -91,8 +90,7 @@ void CanadaQuestion()
 
 void EnthusiasticQuestion()
 {
-    bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
-    if (isEnthusiastic)
+    if (MooseAsks("Are you enthusiastic?"))
     {
         MooseSays("Yay!");
     }
@@ -104,8 +102,7 @@ void EnthusiasticQuestion()
 
 void LoveCSharpQuestion()
 {
-    bool doesLoveCSharp = MooseAsks("Do you love C# yet?");
-    if (doesLoveCSharp)
+    if (MooseAsks("Do you love C# yet?"))
     {
         MooseSays("Good job sucking up to your instructor!");
     }
@@ -117,8 +114,7 @@ void LoveCSharpQuestion()
 
 void SecretQuestion()
 {
-    bool wantsSecret = MooseAsks("Do you want to know a secret?");
-    if (wantsSecret)
+    if (MooseAsks("Do you want to know a secret?"))
     {
         MooseSays("ME TOO!!!! I love secrets...tell me one!");
     }
