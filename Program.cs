@@ -12,14 +12,6 @@ void Main()
     MooseSays("H I, I'M  E N T H U S I A S T I C !");
     MooseSays("I really am enthusiastic");
 
-    // As a question
-    CanadaQuestion();
-    EnthusiasticQuestion();
-    LoveCSharpQuestion();
-    SecretQuestion();
-}
-
-
     void MooseSays(string message)
     {
         Console.WriteLine($@"
@@ -76,50 +68,19 @@ bool MooseAsks(string question)
     }
 }
 
-void CanadaQuestion()
+void AskAQuestion(string question, string affirmativeResponse, string negativeResponse)
 {
-    if (MooseAsks("Is Canada real?"))
+    if (MooseAsks(question))
     {
-        MooseSays("Really? It seems very unlikely.");
+        MooseSays(affirmativeResponse);
     }
     else
     {
-        MooseSays("I  K N E W  I T !!!");
+        MooseSays(negativeResponse);
     }
+
 }
 
-void EnthusiasticQuestion()
-{
-    if (MooseAsks("Are you enthusiastic?"))
-    {
-        MooseSays("Yay!");
-    }
-    else
-    {
-        MooseSays("You should try it!");
-    }
-}
-
-void LoveCSharpQuestion()
-{
-    if (MooseAsks("Do you love C# yet?"))
-    {
-        MooseSays("Good job sucking up to your instructor!");
-    }
-    else
-    {
-        MooseSays("You will...oh, yes, you will...");
-    }
-}
-
-void SecretQuestion()
-{
-    if (MooseAsks("Do you want to know a secret?"))
-    {
-        MooseSays("ME TOO!!!! I love secrets...tell me one!");
-    }
-    else
-    {
-        MooseSays("Oh, no...secrets are the best, I love to share them!");
-    }
+AskAQuestion("Is Canada real?", "Really? It seems very unlikely.", "I K N E W I T !!!");
+AskAQuestion("Are you enthusiastic?","Yay!","You should try it!");
 }
