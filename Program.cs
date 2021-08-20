@@ -60,4 +60,12 @@ bool MooseAsks(string question)
         return false;
     }
 }
-MooseAsks("Is It True?");
+bool isTrue = MooseAsks("Is Canada real?");
+if (isTrue)
+{
+    MooseSays("Really? It seems very unlikely.");
+}
+else
+{
+    MooseSays("I  K N E W  I T !!!");
+}
